@@ -11,6 +11,7 @@ Main.py calls multiple scripts. At the end, you will see a cluster_assign folder
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 Gold Standards for all experiments can be found in the folder archived in data_set_and_gold_standard.zip.
 Symplur tweets extracted manually can be found in the same folder (i.e., data_set_and_gold_standard.zip).
 Tweets used for GT-All are in the data folder. GT-R1, GT-R2, GT-R3, GT-S1, GT-S2, and GT-S3 are not stored as separate files but can be extracted from GT-All.

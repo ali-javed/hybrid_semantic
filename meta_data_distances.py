@@ -17,15 +17,18 @@ import cPickle
 import collections
 import csv
 import os
-
+import shutil
 
 
 #variables
 
 path_variable = os.getcwd()
-tweet_file = "/data/synth_data.txt"
+tweet_file = "/data/combined.txt"
 minimum_tweet_limit = 0   #if you want to drop hashtags with less than x tweets, set x here.
-hashtag_extracted_file_name = '/hashtags.txt'
+#if you want to run existing gold standard tests
+hashtag_extracted_file_name = '/data/GT_Hashtags/GT-R1_hashtags.txt'
+#if you want to run new tests uncomment below, and uncomment ext_hashtag() in line 274
+#hashtag_extracted_file_name = '/data/GT_Hashtags/hashtags.txt'
 
 #function definitions
 
@@ -268,7 +271,14 @@ def semantic_simalirity(h1,h2):
     
 ########################## MAIN ######################
 
-ext_hashtag()  #no need to extract hashtags again and again
+#ext_hashtag()  #no need to extract hashtags again and again
+
+if os.path.exists(path_variable + '/hashtag_and_senses'):
+    shutil.rmtree(path_variable + '/hashtag_and_senses') 
+
+if os.path.exists(path_variable + '/virtual_documents'):
+    shutil.rmtree(path_variable + '/virtual_documents') 
+
 
 if not os.path.exists(path_variable + '/hashtag_and_senses'):
     os.makedirs(path_variable + '/hashtag_and_senses')

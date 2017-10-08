@@ -13,7 +13,7 @@ from itertools import chain
 from math import ceil, floor
 
 
-
+#set methods and thresholds for clustering
 linkage_sense_semantic_method = 'average'  
 linkage_tfidf_method = 'single'
 linkage_semantic_method = 'average' 

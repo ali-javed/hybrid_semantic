@@ -32,5 +32,5 @@ b) uncomment line 31 for a generic hashtag file name
 c) uncomment ext_hashtags() in line 274
 
 
-For any clustering task Method and distance parameters for hierarchical clustering and extracting flat clusters need to be set in form_text_and_metadata_based_clusters.py and Hybrid.py
+For any clustering task "method" and "distance" parameters for hierarchical clustering and extracting flat clusters need to be set in form_text_and_metadata_based_clusters.py and Hybrid.py
 

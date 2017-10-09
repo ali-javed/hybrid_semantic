@@ -20,7 +20,7 @@ There are two parameters that need to be set in the script metadata_based_distan
 Set tweet_file = "/data/combined.txt" in line 26.
 
 2. Hashtag file name:
-Set hashtag_extracted_file_name = '/data/GT_Hashtags/gt-file.txt' in line ???. (Here, gt-file is the ground truth hashtag file you want to use, e.g., GT-R1, GT-R2, GT-R3, GT-S1, GT-S2, GT-S3, GT-ALL.)
+Set hashtag_extracted_file_name = '/data/GT_Hashtags/gt-file.txt' in line 29. (Here, gt-file is the ground truth hashtag file you want to use, e.g., GT-R1, GT-R2, GT-R3, GT-S1, GT-S2, GT-S3, GT-ALL.)
 
 Note: if you want to use your own tweet data set and your own ground truth hashtag set, replace "combined.txt" above with your tweet dataset name and "gt-file.txt" above with your ground truth hashtag file name.
 

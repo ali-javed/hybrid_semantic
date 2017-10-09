@@ -19,9 +19,9 @@ There are three parameters that need to be set in metadata_based_distances.
 
 a) For running GT-R1,GT-R2, GT-R3. GT-S1, GT-S2, GT-S3, GT-ALL, set tweet_file = "/data/combined.txt" in line 26.
 
-b) hashtag_extracted_file_name = '/data/GT_Hashtags/<desired gt file here>.txt'
+b) hashtag_extracted_file_name = '/data/GT_Hashtags/"desired gt file here".txt'
 
-c) make sure ext_hashtags() is uncommented in line 274
+c) make sure ext_hashtags() is commented in line 274
   
 if you want to run anyother hashtag file
 
@@ -32,5 +32,5 @@ b) uncomment line 31 for a generic hashtag file name
 c) uncomment ext_hashtags() in line 274
 
 
-Distance parameters for extracting flat clusters need to be set in form_text_and_metadata_based_clusters.py and Hybrid.py
+For any clustering task Method and distance parameters for hierarchical clustering and extracting flat clusters need to be set in form_text_and_metadata_based_clusters.py and Hybrid.py
 
